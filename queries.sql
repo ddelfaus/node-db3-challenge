@@ -26,3 +26,15 @@ select [Order].Id, [Customer].CompanyName, [Employee].LastName
 from [Order]
 join Customer on [Order].CustomerId = Customer.Id
 join Employee on [Order].EmployeeId = Employee.Id
+
+
+
+findby ssteps
+
+
+select schemes.scheme_name
+    ,steps.step_number
+    ,steps.instructions
+
+from Schemes
+join steps on schemes.id = steps.step_number
